@@ -243,6 +243,7 @@ a {
 
 ::placeholder {
   color: #cdcbd7;
+  font-size: 1.5rem;
 }
 
 .input-group {
