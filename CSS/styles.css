@@ -357,3 +357,23 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Media Objects */
+
+.media {
+  display: flex;
+}
+
+.media__image {
+  padding: 1rem 2rem;
+}
+
+.media__title {
+  margin-top: 0;
+  font-size: 2.4rem;
+  /* color: #fff; */
+}
+
+.media__body {
+  font-size: 2rem;
+}
