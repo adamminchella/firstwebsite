@@ -301,6 +301,10 @@ a {
 
 /* Plans */
 
+.plan {
+  padding: 2rem;
+}
+
 .plan__name {
   font-size: 2.4rem;
   font-weight: 600;
@@ -324,6 +328,19 @@ a {
   font-weight: 300;
   letter-spacing: 0.08rem;
   opacity: 80%;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../Images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
 }
 
 @media screen and (min-width: 1024px) {
