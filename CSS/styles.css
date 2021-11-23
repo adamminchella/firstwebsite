@@ -132,6 +132,7 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
+  padding-right: 0;
   color: var(--color-headings);
 }
 
@@ -638,4 +639,70 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Navigation Bars */
+
+.nav {
+  padding: 0 1rem;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  direction: rtl;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__menu {
+  margin-right: 1rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .nav__menu {
+  opacity: 0.8;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+  }
+  .nav__item {
+    border: none;
+  }
+  .nav .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
 }
