@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 h1 {
@@ -246,6 +247,11 @@ a {
 .btn--stretch {
   padding-left: 6rem;
   padding-right: 6rem;
+}
+
+.btn--wide {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -628,12 +634,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 3.5rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 86%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 3.5rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .container {
@@ -704,5 +710,38 @@ a {
   .nav .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+  transform: translateX(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+  .hero__btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem 4rem;
   }
 }
