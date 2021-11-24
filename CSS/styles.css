@@ -31,16 +31,17 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
-  margin-bottom: 1rem;
-  line-height: 1;
+  margin-bottom: 2rem;
 }
 
 h1 {
   font-size: 7rem;
+  line-height: 1;
 }
 
 h2 {
   font-size: 4rem;
+  line-height: 1.2;
 }
 
 h3 {
@@ -100,7 +101,7 @@ a {
   border-radius: 30px;
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   white-space: nowrap;
 }
 
@@ -208,6 +209,13 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.8rem;
+  vertical-align: middle;
 }
 
 .btn--secondary {
@@ -743,5 +751,43 @@ a {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 2rem 4rem;
+  }
+}
+
+/* Block Domains */
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 700px;
+}
+
+.block-domain .block__text {
+  font-size: 2.2rem;
+}
+
+.block-domain__prices {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-domain__prices {
+    font-size: 1.5rem;
   }
 }
