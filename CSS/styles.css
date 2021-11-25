@@ -653,6 +653,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -908,5 +909,19 @@ a {
 
   .media {
     margin-bottom: 2rem;
+  }
+}
+
+/* Testimonials Block */
+
+.block-testimonial .block__heading {
+  max-width: 450px;
+  margin: 0 auto 2rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .block-testimonial .block__heading {
+    max-width: initial;
   }
 }
