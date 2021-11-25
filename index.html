@@ -15,52 +15,136 @@
     <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
   <body>
-    <section class="block block-testimonial">
+    <footer class="block block-footer">
       <div class="container">
-        <div class="block__header">
-          <h2 class="block__heading">What our Customers are Saying</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            voluptate molestiae libero dicta dolores nisi!
-          </p>
-        </div>
-        <div class="card testimonial">
-          <div class="grid grid--cols-2">
-            <div class="testimonial__image">
-              <img
-                src="/Images/testimonial.jpg"
-                alt="Image of the Mosh Company CEO, smiling with his arms crossed against a plain background."
-              />
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--accent icon--small">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                velit magnam mollitia molestias sequi repellat nulla quis quia
-                soluta ea.
-              </p>
-              <footer class="quote__footer">
-                <div class="media">
-                  <div class="media__image quote__image">
-                    <svg class="icon icon--primary">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">Jhone Lumeo</h3>
-                    <p class="quote__company">Mosh Company ceo</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+        <div class="footer">
+          <ul class="list footer__list">
+            <!-- Change the ul above and li below to a div and work out why there's an issue -->
+            <li class="collapsible collapsible--expanded footer__collapsible">
+              <header class="collapsible__header footer__header">
+                <h2 class="collapsible__heading footer__heading">Products</h2>
+                <img
+                  class="icon collapsible__chevron"
+                  src="/Images/chevron.svg"
+                  alt=""
+                />
+              </header>
+              <ul class="list collapsible__content">
+                <li class="list__item">
+                  <a href="#">WordPress Hosting</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Free Automated WordPress</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Migrations</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Domain Names</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Monthly Web Hosting</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsible collapsible--expanded footer__collapsible">
+              <header class="collapsible__header footer__header">
+                <h2 class="collapsible__heading footer__heading">Company</h2>
+                <img
+                  class="icon collapsible__chevron"
+                  src="/Images/chevron.svg"
+                  alt=""
+                />
+              </header>
+              <ul class="list collapsible__content">
+                <li class="list__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Affiliates</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Community</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">News</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Green Hosting</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsible collapsible--expanded footer__collapsible">
+              <header class="collapsible__header footer__header">
+                <h2 class="collapsible__heading footer__heading">Support</h2>
+                <img
+                  class="icon collapsible__chevron"
+                  src="/Images/chevron.svg"
+                  alt=""
+                />
+              </header>
+              <ul class="list collapsible__content">
+                <li class="list__item">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Knowledge Base</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Forums</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">System Staus</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Web Hosting</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">DreamCompute</a>
+                </li>
+              </ul>
+            </li>
+            <li class="collapsible collapsible--expanded footer__collapsible">
+              <header class="collapsible__header footer__header">
+                <h2 class="collapsible__heading footer__heading">Domains</h2>
+                <img
+                  class="icon collapsible__chevron"
+                  src="/Images/chevron.svg"
+                  alt=""
+                />
+              </header>
+              <ul class="list collapsible__content">
+                <li class="list__item">
+                  <a href="#">Domain Checker</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Domain Transfer</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Free Domain</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">XYZ Domain</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Cheap SSL Certificate</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="bottom">
+            <img class="footer__logo" src="/Images/logo.png" alt="" />
+            <p class="footer__text">Copyright &copy; 2021 Mosh</p>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script src="/js/main.js"></script>
   </body>
 </html>
