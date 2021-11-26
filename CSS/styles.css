@@ -649,6 +649,10 @@ a {
 
 /* Blocks */
 
+.block:first-child {
+  padding: 0;
+}
+
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
@@ -690,7 +694,7 @@ a {
 /* Navigation Bars */
 
 .nav {
-  padding: 0 1rem;
+  padding: 0;
   background: #000;
   display: flex;
   justify-content: space-between;
